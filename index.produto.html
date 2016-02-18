@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Cadastro de Produto</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+	<body id="body"bgcolor="#CDC5BF">  
+
+	<div id = "barra">
+		<h2>
+		<ol class="breadcrumb">
+			<li><a href="index.html">Cliente</a></li>
+			<li><a href="index.pedido.html">Pedido</a></li>				
+			<li><a href="index.produto.html">Produto</a></li>
+		</ol>
+		</h2>
+	</div>
+		
+		<div id="interface" class="col-md-6 col-md-offset-3">
+		
+
+			<fieldset id="cadastroProdutos">
+
+				<legend><font face="Comic Sans MS"><h2>&nbsp; Cadastro de Produtos &nbsp;</h2></font></legend class="cLegend">
+				
+
+				<form action="index.modu.produto.php" method="get">
+
+
+					<input type="hidden" id="botao" name="botao"/>
+					<table>
+						<tr>
+							<td><label for="idP"><h4>ID:&nbsp;</h4></label></td>
+							<td>
+								<input class="form-control" id="idP" type="text" name="text_id"/>
+							</td>
+						</tr>
+
+						<tr>
+							<td><label for="idP"><h4>Nome:&nbsp;</h4></label></td>
+							<td>
+								<input class="form-control" id="idNome" type="text" name="text_nome"/>
+							</td>
+						</tr>
+
+						<tr>
+							<td><label for="idP"><h4>Descricao:&nbsp;</h4></label></td>
+							<td>
+								<input class="form-control" id="idDescricao" type="text" name="text_descricao"/>
+							</td>
+						</tr>
+
+						<tr>
+							<td><label for="idP"><h4>Preco:&nbsp;</h4></label></td>
+							<td>
+								<input class="form-control" id="idPreco" type="text" name="text_preco"/>
+							</td>
+						</tr>
+
+					</table>
+					</br>
+
+					<input type="submit" class="btn btn-primary" value="Cadastrar" onclick="document.getElementById('botao').value = 'cadastrar'"/>
+					<input type="submit" class="btn btn-primary" value="Consultar" onclick="document.getElementById('botao').value = 'consultar' "/>
+					<input type="submit" class="btn btn-primary" value="Alterar" onclick="document.getElementById('botao').value = 'alterar'"/>
+					<input type="submit" class="btn btn-primary" value="Excluir" onclick="document.getElementById('botao').value = 'excluir' "/>
+
+				</form>
+
+			</fieldset>
+
+		</div>
+	</body>
+</html>
